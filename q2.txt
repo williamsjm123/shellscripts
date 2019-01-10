@@ -1,0 +1,16 @@
+#!/bin/sh
+inputNumber=0
+
+total=0
+
+while [ $inputNumber != q ]
+do
+	echo Enter a number to add it to the total
+	echo Or press the q key to exit and display the total
+
+	read inputNumber
+	total=$(($total+$inputNumber))
+	echo $inputNumber added to total
+done
+
+echo The Total of the entered numbers is: $total

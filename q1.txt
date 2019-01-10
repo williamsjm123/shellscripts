@@ -1,0 +1,14 @@
+#!/bin/sh
+inputNumber=USER
+
+total=0
+
+for number in {1..10}
+do
+	echo Please enter number $number of 10:
+	read inputNumber
+	total=$(($total+$inputNumber))
+	echo $inputNumber added to total
+done
+
+echo The Total of all 10 numbers is: $total

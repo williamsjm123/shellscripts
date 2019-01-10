@@ -1,0 +1,15 @@
+#!/bin/sh
+
+for x in *
+do
+	if [ -d $x ]
+	then
+		echo Directory $x $(ls -m $x)
+	fi	 
+
+	if [ -f $x ]
+	then
+		echo File $x
+	fi
+
+done

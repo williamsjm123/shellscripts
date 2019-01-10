@@ -1,0 +1,13 @@
+#!/bin/sh
+
+mkdir MyTextFiles
+
+cp *.txt MyTextFiles
+
+cd MyTextFiles
+
+ls > DirectoryListing.txt
+
+wc -l < DirectoryListing.txt
+
+
